@@ -1,3 +1,5 @@
+require 'stylecompile/source.rb'
+require 'stylecompile/cli.rb'
+
 module Stylecompile
-  # Your code goes here...
 end

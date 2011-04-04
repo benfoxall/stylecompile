@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "stylecompile"
   s.version     = Stylecompile::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Ben Foxall"]
+  s.email       = ["benfoxall@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Use less/sass from css files}
+  s.description = %q{This gem lets you include less/css files as plain old css}
 
   s.rubyforge_project = "stylecompile"
 

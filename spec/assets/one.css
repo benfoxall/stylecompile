@@ -1,1 +1,3 @@
-@include test.css /* from test.less */
+@include test.css /* from test.less */;
+@include test2.css /* from test.less with cat $SOURCE > $TARGET */;
+@include existing.css;

@@ -20,7 +20,24 @@ describe Stylecompile::Source, "#one" do
   end
   
   it "should detect the externals" do
-    @sc.externals.size.should > 0
+    @sc.externals.size.should == 3
   end
+  
+  context 'first external' do
+    
+    before do
+      @external = @sc.externals.first;
+    end
+    
+    it "should have the target defined" do
+      @external[:target].should == 'spec/assets/test.css'
+    end
+
+    it "should have the source defined" do
+      @external[:source].should == 'spec/assets/test.less'
+    end
+    
+  end
+  
   
 end

@@ -25,7 +25,7 @@ module Stylecompile
       
       @file.each_line do |line|
         
-        match = line.match(/@include\s+(\S+)\s*(\/\*.+\*\/)?/)
+        match = line.match(/@include\s+(\S+)\s*(\/\*.+\*\/)?;/)
         
         unless match.nil?
           
@@ -33,7 +33,7 @@ module Stylecompile
           
           comment = match[2]
           unless comment.nil?
-            cmatch = comment.match /\/\* from (\S+)( with (\S+))? \*\//
+            cmatch = comment.match /\/\* from (\S+)( with (.+))? \*\//
             unless cmatch.nil?
               ext[:source] = File.join(base, cmatch[1]) unless cmatch[1].nil?
               ext[:with] = cmatch[3]

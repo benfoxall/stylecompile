@@ -1,3 +1,10 @@
+/* this is a test document */
+body{
+	margin:2em;
+}
+
 @include test.css /* from test.less */;
+
 @include test2.css /* from test.less with cat $SOURCE > $TARGET */;
+
 @include existing.css;
